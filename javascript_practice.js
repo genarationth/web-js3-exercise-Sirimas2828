@@ -1,17 +1,6 @@
 // Exercise 1
-// Define the list of transactions
-const transactions = [100, 200, 300, 400];
-
-// Define the transaction fee and interest rate
-const transactionFee = 3;
-const interestRate = 0.01;
-
-// Calculate the total cost
-const totalCost = transactions.reduce((acc, cur) => acc + cur, 0) * (1 + interestRate) + transactions.length * transactionFee;
-
-// Print the total cost
-console.log(`Maria's total cost for the month is $${totalCost.toFixed(2)}`);
-
+const paymentCount = total => ((total * 0.01) + 3) + total
+console.log (`Total price, fee included = ${paymentCount(1300)} dollars`)
 
 //Exercise  2
 //Ed would like a way to input 3 names of his friends.
