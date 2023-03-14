@@ -44,6 +44,12 @@ greetFriendsWithAge( 'a', 1982, 'b', 1999, 'c', 1988)
 // Part 1
 // A student passes if they have a score greater than or equal to 5. Create a function that returns a boolean true or false.
 // const prompt = require ("prompt-sync")
+// Part 2
+// A student has an excellent grade if they score higher than 8. Add on to your function to print out "Excellent" for scores greater than 8.
+// Part 3
+// A student has a perfect grade if their score is 11. Add on to your function to print out "Perfect" for a score of 11.
+
+
 function calculateGrade() {
     let score = Number ("Enter your score:")
     let grade = "";
@@ -52,18 +58,15 @@ function calculateGrade() {
     } else if (score >=4) {
         grade = "false"
     }
+    if (score >= 8) {
+        grade = "Excellent"
+    }
+    
+    if (score >= 11) {
+        grade = "Perfect"
+    }
     return grade;
 }
     console.log(calculateGrade())
-// Part 2
-// A student has an excellent grade if they score higher than 8. Add on to your function to print out "Excellent" for scores greater than 8.
-if (score >= 8) {
-    grade = "Excellent"
-}
 
 
-// Part 3
-// A student has a perfect grade if their score is 11. Add on to your function to print out "Perfect" for a score of 11.
-if (score >= 11) {
-    grade = "Perfect"
-}
