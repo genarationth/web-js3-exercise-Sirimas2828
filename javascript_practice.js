@@ -19,22 +19,23 @@ function calculateAge(birthYear) {
     return age;
 }
 const birthYear = 1990;
-    const birthYear1 = 1989
-    const birthYear2 = 1990
-    const birthYear3 = 1992
+const birthYear1 = 1989
+const birthYear2 = 1990
+const birthYear3 = 1992
 const age = calculateAge(birthYear);
 console.log(age);
 
 //Ed would like to create a function that prints out, Welcome {name1}, you are {age1}. Welcome {name2}, you are {age2}. Welcome {name3}, you are {age3}.
-// function greetFriendsWithAge (name1, birthYear1, name2, birthYear2, name3, birthYear3) {
+function greetFriendsWithAge (name1, birthYear1, name2, birthYear2, name3, birthYear3) {
     const age1 = calculateAge(birthYear1);
     const age2 = calculateAge(birthYear2);
     const age3 = calculateAge(birthYear3);
+    
     console.log(`Welcome ${name1}, you are ${age1}.`);
     console.log(`Welcome ${name2}, you are ${age2}.`);
     console.log(`Welcome ${name3}, you are ${age3}.`);
-//   }
-
+  }
+greetFriendsWithAge( 'a', 1982, 'b', 1999, 'c', 1988)
 
 //Exercise 3
 // Challenge Yourself
