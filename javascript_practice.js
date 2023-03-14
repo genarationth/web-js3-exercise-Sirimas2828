@@ -40,13 +40,30 @@ greetFriendsWithAge( 'a', 1982, 'b', 1999, 'c', 1988)
 //Exercise 3
 // Challenge Yourself
 // A teacher wants to create a rubric for grading. The rubric is from 0 - 11.
-
+  
 // Part 1
 // A student passes if they have a score greater than or equal to 5. Create a function that returns a boolean true or false.
-
+// const prompt = require ("prompt-sync")
+function calculateGrade() {
+    let score = Number ("Enter your score:")
+    let grade = "";
+    if (score >= 5) {
+        grade = "true"
+    } else if (score >=4) {
+        grade = "false"
+    }
+    return grade;
+}
+    console.log(calculateGrade())
 // Part 2
 // A student has an excellent grade if they score higher than 8. Add on to your function to print out "Excellent" for scores greater than 8.
+if (score >= 8) {
+    grade = "Excellent"
+}
+
 
 // Part 3
 // A student has a perfect grade if their score is 11. Add on to your function to print out "Perfect" for a score of 11.
-
+if (score >= 11) {
+    grade = "Perfect"
+}
