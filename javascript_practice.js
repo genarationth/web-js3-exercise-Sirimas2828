@@ -1,6 +1,6 @@
 // Exercise 1
 const paymentCount = total => ((total * 0.01) + 3) + total
-console.log (`Total price, fee included = ${paymentCount(1300)} dollars`)
+console.log (`Total price, fee included = ${paymentCount(1000)} dollars`)
 
 //Exercise  2
 //Ed would like a way to input 3 names of his friends.
